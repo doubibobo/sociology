@@ -10,6 +10,6 @@ def read_csv(file, cols_name):
     return data
 
 
-def write_csv(data):
+def write_csv(data, file_path='../files/gccs2008-answer'):
     df = pd.DataFrame(data)
-    df.to_csv('../files/gccs2008-answer')
+    df.to_csv(file_path, encoding='utf_8_sig')
